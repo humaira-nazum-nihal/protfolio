@@ -1,39 +1,4 @@
 
-        // Array of image sources
-        const images = [
-            'images/nihal1.jpg',
-            'images/nihal2.jpg',
-            'images/nihal3.jpg'
-        ];
-
-        // Initial index
-        let currentIndex = 0;
-
-        // Function to change the image
-        function changeImage() {
-            // Get the image element by its ID
-            const profileImage = document.getElementById('profile-image');
-
-            // Update the src attribute to the next image
-            profileImage.src = images[currentIndex];
-
-            // Increment the index, and reset it if it goes past the last image
-            currentIndex = (currentIndex + 1) % images.length;
-        }
-
-        // Set interval to change the image every 1 minute (60000 milliseconds)
-        setInterval(changeImage, 60000);
-
-        // Optionally, immediately call changeImage() to start with the first rotation
-        changeImage();
-
-
-
-
-
-
-
-
 
 
 /* ----- NAVIGATION BAR FUNCTION ----- */
